@@ -24,11 +24,9 @@ header {
     z-index: 1000; /* Ensures header stays on top of other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better visibility */
 }
+
 body {
-  padding-top: 80px !important;
-}
-  }
-}
+    padding-top: 150px; /* Adjust based on header height to prevent content overlap */
 }
 
 /* Logo Styling */
@@ -37,12 +35,10 @@ header img {
 }
 
 nav ul {
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 10px 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
-
 
 /* Navigation Buttons */
 .nav-button {
@@ -243,62 +239,3 @@ footer p {
     margin: 10px;
     border-radius: 8px;
 }
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 10px;
-    font-size: 16px;
-    height: auto;
-  }
-
-  header img {
-    height: 50px;
-  }
-
-  body {
-    padding-top: 80px !important;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 10px;
-  }
-}
-
-  .hero-text {
-    position: static;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .video-container {
-    padding: 10px;
-  }
-
-  .signup-container {
-    padding: 20px;
-    margin: 20px auto;
-  }
-
-  .store-buttons img {
-    width: 120px;
-  }
-
-  .demo-images img {
-    max-width: 100%;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .signup-button {
-    width: 100%;
-  }
-}
-
-
-

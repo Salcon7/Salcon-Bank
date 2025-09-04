@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: 'Marcellus', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color: #ffffff;
+    color: black;
+    padding: 10px; /* Increased padding for better spacing */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Marcellus', serif;
+    z-index: 1000; /* Ensures header stays on top of other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for better visibility */
+}
+
+body {
+    padding-top: 150px; /* Adjust based on header height to prevent content overlap */
+}
+
+/* Logo Styling */
+header img {
+    height: 130px; /* Adjust the logo size as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    display: inline-block; /* Aligns buttons in a row */
+    color: #0097b2; /* Text color */
+    text-decoration: none; /* Removes default underline */
+    font-family: 'League Spartan', sans-serif; /* Font style */
+    font-size: 18px; /* Adjusts font size */
+    padding: 5px 10px; /* Slight padding for spacing */
+    position: relative; /* Needed for absolute positioning */
+}
+
+.nav-button::after {
+    content: ""; /* Empty pseudo-element for the underline */
+    display: block; /* Makes it a block-level element */
+    width: 100%; /* Full width of text */
+    height: 2px; /* Thin underline */
+    background-color: #0097b2; /* Underline color */
+    position: absolute; /* Positions the line */
+    bottom: 0; /* Places it right below the text */
+    left: 0; /* Aligns with text */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.nav-button:hover::after {
+    width: 50%; /* Shrinks the underline on hover */
+}
+
+
+/* Hero Text */
+.hero-text {
+    flex: 1; /* Allows the text area to take up available space */
+    margin-right: 0px; /* Adds space between text and image */
+    margin-left: 0px;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.lets-connect {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.lets-connect h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.lets-connect p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #0097b2;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Particles behind the video */
+}
+
+.video-container video {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    z-index: 1; /* Ensure video stays above particles */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+footer div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer p {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.signup-container h2 {
+    color: #0097b2;
+}
+
+.signup-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0097b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #007a8b;
+}
+
+.app-download, .account-demo {
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Marcellus', serif;
+
+}
+
+.store-buttons img {
+    width: 150px;
+    margin: 10px;
+}
+
+.demo-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+}

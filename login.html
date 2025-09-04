@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Salcon Virtual Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="salcon logo.png" alt="Salcon Logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="login.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="app-download">
+        <h2>Download the Salcon Virtual Bank App</h2>
+        <div class="store-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.salcon.virtualbank" target="_blank">
+                <img src="google play badge.png" alt="Get it on Google Play">
+            </a>
+            <a href="https://apps.apple.com/app/salcon-virtual-bank/id123456789" target="_blank">
+                <img src="apple store badge.png" alt="Download on the App Store">
+            </a>
+        </div>
+    </section>
+
+    <section class="account-demo">
+        <h2>How to Create Your Account</h2>
+        <p>Follow these steps in the app:</p>
+        <div class="demo-images">
+            <img src="step1.png" alt="Step 1: Open the App">
+            <img src="step2.png" alt="Step 2: Enter Your Details">
+            <img src="step3.png" alt="Step 3: Confirm Your Account">
+        </div>
+    </section>
+    
+
+    <section class="signup-container">
+        <h2>Sign up to receive our monthly newsletters</h2>
+        <form action="signup_process.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit" class="signup-button">Submit</button>
+        </form>
+    </section>
+
+    <section id="lets-connect" class="lets-connect">
+        <h2>Let's Connect</h2>
+        <p>Follow us on our official pages:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/salconvirtualbank" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/salcon-virtual-bank/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:salconvirtualbank@gmail.com">
+                <img src="gmail-icon.png" alt="Gmail">
+            </a>
+            <a href="https://twitter.com/salconbank" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@SalconVirtualBank" target="_blank">
+                <img src="youtube-icon.png" alt="YouTube">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Salcon Virtual Bank.</p>
+    </footer>
+    <script src="particles.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -239,3 +239,54 @@ footer p {
     margin: 10px;
     border-radius: 8px;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  header img {
+    height: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .hero-text {
+    position: static;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .video-container {
+    padding: 10px;
+  }
+
+  .signup-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .store-buttons img {
+    width: 120px;
+  }
+
+  .demo-images img {
+    max-width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .signup-button {
+    width: 100%;
+  }
+}
+

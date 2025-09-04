@@ -26,7 +26,11 @@ header {
 }
 
 body {
-    padding-top: 150px; /* Adjust based on header height to prevent content overlap */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* or even 80px depending on final header height */
+  }
+}
 }
 
 /* Logo Styling */
@@ -35,10 +39,12 @@ header img {
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 10px 0;
 }
+
 
 /* Navigation Buttons */
 .nav-button {
@@ -240,15 +246,15 @@ footer p {
     border-radius: 8px;
 }
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-    font-size: 16px;
-  }
+header {
+  flex-direction: column;
+  padding: 10px;
+  font-size: 16px;
+}
 
-  header img {
-    height: 80px;
-  }
+header img {
+  height: 60px; /* Shrink logo for mobile */
+}
 
   nav ul {
     flex-direction: column;
@@ -289,4 +295,5 @@ footer p {
     width: 100%;
   }
 }
+
 
